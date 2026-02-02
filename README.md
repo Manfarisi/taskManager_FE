@@ -1,34 +1,24 @@
-# 📝 Task Manager CRUD (MERN Stack)
+# 🖥️ Task Manager Frontend (React)
 
-A **simple full-stack Task Manager application** built using the  
-**MERN Stack (MongoDB, Express.js, React, Node.js)**.
-
-This project demonstrates basic **CRUD operations** and **RESTful API integration**, suitable for learning and junior full-stack portfolios.
+A **frontend application** for the Task Manager CRUD system, built using **React**.
+This app focuses on **user interface development** and **API integration** to manage tasks.
 
 ---
 
 ## 🚀 Features
-- Create, Read, Update, and Delete tasks
-- RESTful API using Express & Node.js
-- React-based frontend
-- MongoDB database with Mongoose ODM
+- Dashboard overview
+- Task list and task detail view
+- Create, update, and delete tasks
+- API consumption using Axios
+- Responsive user interface
 
 ---
 
 ## 🛠️ Tech Stack
-
-**Frontend**
 - React
 - Axios
-
-**Backend**
-- Node.js
-- Express.js
-
-**Database**
-- MongoDB
-- Mongoose
-
+- Tailwind CSS / CSS
+  
 ---
 
 ## 📸 Screenshots
@@ -47,6 +37,15 @@ This project demonstrates basic **CRUD operations** and **RESTful API integratio
 
 
 ---
+
+
+## ▶️ Run Locally
+
+npm install
+npm run dev
+
+---
+
 
 ## 👨‍💻 Author
 **Salman Alfarisi**  
