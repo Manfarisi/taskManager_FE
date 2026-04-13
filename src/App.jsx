@@ -14,11 +14,17 @@ import Dashboard from "./pages/Admin/Dashboard";
 import ManageTasks from "./pages/Admin/ManageTasks";
 import CreateTask from "./pages/Admin/CreateTask";
 import ManageUsers from "./pages/Admin/ManageUsers";
-import UserDashboard from "./pages/User/userDashboard";
+import UserDashboard from "./pages/User/UserDashboard";
 import MyTask from "./pages/User/MyTask";
 import ViewTaskDetails from "./pages/User/ViewTaskDetails";
 import UserProvider, { UserContext } from "./context/userContext";
 import { useContext } from "react";
+import Attendance from "./pages/Admin/Attendance";
+import AttendanceUser from "./pages/User/AttendanceUser";
+import LeaveManagement from "./pages/Admin/LeaveManagement";
+import AdminSalary from "./pages/Admin/AdminSalary";
+import SalarySlip from "./pages/User/SalarySlip";
+import UserTask from "./pages/Admin/UserTask";
 const App = () => {
   return (
     <UserProvider>
@@ -32,8 +38,13 @@ const App = () => {
             <Route element={<PrivateRoute allowedRoles={["admin"]} />}>
               <Route path="/admin/dashboard" element={<Dashboard />} />
               <Route path="/admin/tasks" element={<ManageTasks />} />
+              <Route path="/admin/TaskUpdate" element={<UserTask />} />
               <Route path="/admin/create-task" element={<CreateTask />} />
               <Route path="/admin/users" element={<ManageUsers />} />
+              <Route path="/admin/attendance" element={<Attendance />} />
+              <Route path="/admin/leave-management" element={<LeaveManagement />} />
+              <Route path="/admin/payroll" element={<AdminSalary />} />
+              
             </Route>
 
             {/* User Route */}
@@ -45,6 +56,8 @@ const App = () => {
                 element={<ViewTaskDetails />}
               />
             </Route>
+            <Route path="/user/attendance" element={<AttendanceUser />} />
+            <Route path="/user/payroll" element={<SalarySlip />} />
 
             {/* Default Route */}
             <Route path="/" element={<Root />} />

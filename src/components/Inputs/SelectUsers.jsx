@@ -98,6 +98,7 @@ const SelectUsers = ({ selectedUsers, setSelectedUsers }) => {
                   <p className="font-semibold text-gray-800 tracking-wide">
                     {user.name}
                   </p>
+                  <p>sda</p>
                   <p className="text-sm text-gray-500 italic">{user.email}</p>
                 </div>
               </div>

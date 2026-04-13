@@ -5,7 +5,7 @@ import { PRIORITY_DATA } from "../../utils/data";
 import SelecDropdown from "../../components/Inputs/SelecDropdown";
 import SelectUsers from "../../components/Inputs/SelectUsers";
 import { HiTrash, HiPlusCircle, HiArrowLeft } from "react-icons/hi";
-import TodoListInput from "../../components/Inputs/todoListInput";
+import TodoListInput from "../../components/Inputs/TodoListInput";
 import AddAttachmentsInput from "../../components/Inputs/AddAttachmentsInput";
 import axiosInstance from "../../utils/axiosinstance";
 import { API_PATH } from "../../utils/apiPath";
